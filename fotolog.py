@@ -48,6 +48,5 @@ while (next != ''):
 		next = proxImg()
 
 print('No more images')
-	
-
+sys.exit(0)
 
