@@ -1,4 +1,8 @@
 #!/usr/bin/python
+'''
+	Uso: python feeds.py 'NombreDeCategoriaFeeds' 'ArchivoOPML'
+'''
+
 import sys
 from bs4 import BeautifulSoup
 
