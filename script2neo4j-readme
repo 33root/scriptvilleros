@@ -1,3 +1,6 @@
+instalar neo4j-driver para python
+>>pip install neo4j-driver
+
 Para levantar NEO4J correr
 
 docker run \
