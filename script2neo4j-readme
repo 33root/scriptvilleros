@@ -1,0 +1,19 @@
+Para levantar NEO4J correr
+
+docker run \
+    --publish=7474:7474 --publish=7687:7687 \
+    --volume=$HOME/neo4j/data:/data \
+    --volume=$HOME/neo4j/logs:/logs \
+    neo4j:3.0
+
+
+entrar a localhost:7474, acceder por primera vez (user:neo4j pass:neo4j)
+cambiar la password por "password" (ok no, pero si le pones otra clave, cambiala en el código)
+
+
+para dropear todo el contenido de la base correr:
+MATCH (n) DETACH DELETE n
+
+
+El archivo "output.txt" debe tener varios registros separados por enter, con el siguiente formato
+|5367186e3aa9b2b178ba82922c88af538d61a99a|c0675b84f5960e95962d299d4c41511bbf6f8f5f5585bdacd1ae567e904cb92f|01039a95e0a14767784acc8f07035935|-|-|-|468277|Zip archive data at least v2.0 to extract|
